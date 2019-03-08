@@ -1,0 +1,100 @@
+@keyframes fade{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+body, html{
+	font-family: 'Times New Roman', serif;
+}
+
+.nav-item a{
+	color: black;
+}
+
+.opening {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: cover;
+	background-color: white;
+	z-index: 200;
+	pointer-events: none;
+
+	animation: fade 3s forwards;
+	-webkit-animation: fade 3s forwards;;
+	animation-iteration-count: 1;
+
+
+}
+.img-contain{
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -20px;
+}
+
+.background-container{
+	height: 100%;
+	z-index: 0;
+	position: relative;
+	top: 5%;
+
+	background-image: url('../img/bg/bg1.png');
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 1024px 1024px;
+
+	mask-repeat: repeat-y;
+	mask-image: url('../img/msks/mask1.png');
+	mask-position: right;
+	mask-type: alpha;
+
+	-webkit-mask-position: right;
+	-webkit-mask-image: url('');
+	-webkit-mask-repeat: repeat-y;
+}
+.container-fluid{
+	padding-left: 45px !important;
+	padding-right: 45px !important;
+}
+.cap-title{
+	letter-spacing: 8px;
+	font-weight: bold;
+}
+.big-title{
+	text-align: center;
+	font-size: 3rem;
+  word-wrap: break-word;
+
+	left: 50%;
+	top: 89%;
+	width: 1px;
+	visibility: hidden;
+
+}
+.desc-text{
+	width: 60%;
+	font-size: 1.4rem;
+}
+
+.header-watch{
+	padding-top: 120px;
+	z-index: 2;
+}
+
+@media (max-width: 768px) { 
+
+	.desc-text{
+		width: 100%;
+		font-size: 1.0rem;
+	}
+
+ }
